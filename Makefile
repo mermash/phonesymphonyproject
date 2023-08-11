@@ -157,3 +157,10 @@ db_load:
 #composer require symfony/validator
 
 #curl -H 'Content-Type: application/json' -XPOST -v "http://localhost:888/api/v1/user/" --data '{"name": "test", "birthdate": "22-05-1990"}'
+
+#git init
+#git add .
+#git commit -m "first commit"
+#git branch -M main
+#git remote add origin git@github.com:mermash/phonesymphonyproject.git
+#git push -u origin main
