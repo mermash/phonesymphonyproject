@@ -13,7 +13,6 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class UserService implements UserServiceInterface
 {
-    private const BALANCE_TOP_UP_LIMIT = 100;
 
     public function __construct(
         private EntityManagerInterface $em,
