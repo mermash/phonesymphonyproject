@@ -1,3 +1,5 @@
+It's a test project.
+
 Start this project:
 
 1. make dc_build
