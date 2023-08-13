@@ -1,7 +1,7 @@
 <?php
 
 /**
- * get from https://github.com/ns3777k/publisher-youtube
+ * get from  https://github.com/ns3777k/publisher-youtube
  */
 
 declare(strict_types=1);
@@ -15,7 +15,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ArgumentValueResolverInterface;
 use Symfony\Component\HttpKernel\Controller\ValueResolverInterface;
 use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;
-use Generator;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;

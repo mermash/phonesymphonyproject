@@ -17,26 +17,6 @@ class PhoneNumberFixtures extends BaseFixture implements DependentFixtureInterfa
 
     protected function loadData(ObjectManager $manager)
     {
-//        for ($i = UserFixtures::USER_MIN_KEY; $i <= UserFixtures::USER_COUNT; $i++) {
-//            $phoneNumber = new PhoneNumber();
-//            $phoneNumber->setPhoneNumber('333');
-//            $num = $this->faker->numberBetween(UserFixtures::USER_MIN_KEY, UserFixtures::USER_COUNT);
-//            $user = $this->getReference(User::class . '_' . $num);
-//            $phoneNumber->setPhoneUser($user);
-//
-//            $operatorCode = $this->faker->randomElement(PhoneOperatorFixtures::$phoneOperators);
-//            $operator = $this->getReference(PhoneOperator::class . '_' . $operatorCode);
-//            $phoneNumber->setOperator($operator);
-//
-//            $manager->persist($phoneNumber);
-//
-//            $this->addReference(PhoneNumber::class . '_' . $i, $phoneNumber);
-//        }
-//
-//        $manager->flush();
-
-
-
         for ($i = 1; $i <= UserFixtures::USER_COUNT; $i++) {
             $user = $this->getReference(User::class . '_' . $i);
             $num = $this->faker->numberBetween(self::MIN_PHONE_PER_USER, self::MAX_PHONE_PER_USER);

@@ -1,5 +1,5 @@
 #
-# use material from
+# use from
 # https://github.com/alejandro-yakovlev/symfony-docker
 #
 version: "3.8"

@@ -10,6 +10,10 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: PhoneNumberRepository::class)]
 class PhoneNumber
 {
+    /**
+     * it had been better to store in a dictionary `phone_code_country` table
+     * or without breaking down phone number to parts
+    */
     public const CODE_COUNTRY = "380";
 
     #[ORM\Id]

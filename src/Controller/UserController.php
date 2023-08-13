@@ -5,17 +5,18 @@ namespace App\Controller;
 use App\DTO\Request\AddPhoneNumberRequest;
 use App\DTO\Request\CreateUserRequest;
 use App\DTO\Request\PhoneBalanceTopUpRequest;
-use App\Service\PhoneService;
+use App\Service\PhoneServiceInterface;
 use App\Service\UserServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Attribute\RequestBody;
 
-class UserInfoController extends AbstractController
+class UserController extends AbstractController
 {
     public function __construct(
         private UserServiceInterface $userService,
-        private PhoneService $phoneService
+        private PhoneServiceInterface $phoneService
     )
     {
     }

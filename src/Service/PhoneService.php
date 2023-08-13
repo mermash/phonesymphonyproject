@@ -17,7 +17,7 @@ use App\Repository\PhoneOperatorRepository;
 use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
-class PhoneService
+class PhoneService implements PhoneServiceInterface
 {
     private const BALANCE_TOP_UP_LIMIT = 100;
 
@@ -29,6 +29,7 @@ class PhoneService
     )
     {
     }
+
 
     private function getPartsOfPhoneNumber(string $phoneNumber): array
     {
@@ -44,6 +45,9 @@ class PhoneService
     }
 
 
+    /**
+     * add new phone number to user
+     */
     public function addPhoneNumber(AddPhoneNumberRequest $request): void
     {
         list(
@@ -68,6 +72,9 @@ class PhoneService
         $this->em->flush();
     }
 
+    /**
+     * top up a balance of a phone number
+     */
     public function phoneBalanceTopUp(PhoneBalanceTopUpRequest $request): void
     {
         if ($request->getAmount() >= self::BALANCE_TOP_UP_LIMIT) {
