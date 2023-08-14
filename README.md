@@ -5,6 +5,7 @@ Where can I find:
 ================
 
 The main logic here:
+- App\Controller\UserController
 - App\Service\UserService
 - App\Service\PhoneService
 
