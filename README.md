@@ -18,6 +18,7 @@ The dump of a database here:
 
 The sql quires here:
 - docker/mysql/script.sql
+- docker/mysql/schema.sql
 
 
 Start this project
